@@ -5,25 +5,25 @@ var Wizard = require('../lib/wizard')
 
 describe('Wizard', function () {
 
-  it.skip('should be a function', function () {
+  it('should be a function', function () {
     var wizard = new Wizard();
 
     assert.isFunction(Wizard);
   });
 
-  it.skip('should have a name', function () {
+  it('should have a name', function () {
     var wizard = new Wizard('Hermione'); // yes we know Hermione is not a wizard
 
     assert.equal(wizard.name, 'Hermione');
   });
 
-  it.skip('should have a different name', function () {
+  it('should have a different name', function () {
     var wizard = new Wizard('Ron');
 
     assert.equal(wizard.name, 'Ron');
   });
 
-  it.skip('should have a pet', function () {
+  it('should have a pet', function () {
     var wizard = new Wizard('Hermione');
     var pet = new Pet('Crookshanks', 'cat');
     wizard.givePet(pet);
@@ -32,7 +32,7 @@ describe('Wizard', function () {
     assert.equal(wizard.pets[0], pet);
   });
 
-  it.skip('should be able to have many pets', function (){
+  it('should be able to have many pets', function (){
     var wizard = new Wizard('Hermione');
     var pet = new Pet('Crookshanks', 'cat');
     var pet2 = new Pet('Hedwig', 'owl');
@@ -44,7 +44,7 @@ describe('Wizard', function () {
     assert.equal(wizard.pets[1], pet2);
   });
 
-  it.skip('should list pets as a string', function () {
+  it('should list pets as a string', function () {
     var wizard = new Wizard('Hermione');
     var pet = new Pet('Crookshanks', 'cat');
     var pet2 = new Pet('Hedwig', 'owl');
@@ -54,7 +54,7 @@ describe('Wizard', function () {
     assert.equal(wizard.petList(), "Crookshanks, a cat, Hedwig, an owl.");
   });
 
-  it.skip('should have a wand', function () {
+  it('should have a wand', function () {
     var wizard = new Wizard('Hermione');
     var wand = new Wand("Cherry", 12, "Unicorn Hair");
     wizard.giveWand(wand);
@@ -62,7 +62,7 @@ describe('Wizard', function () {
     assert.equal(wizard.wand, wand);
   });
 
-  it.skip('should cast a spell', function () {
+  it('should cast a spell', function () {
     var wizard = new Wizard('Hermione');
     var wand = new Wand("Cherry", 12, "Unicorn Hair");
     wizard.giveWand(wand);

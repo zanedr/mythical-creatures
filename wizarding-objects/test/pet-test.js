@@ -13,13 +13,13 @@ describe('Pet', function() {
     assert.equal(pet.name, 'Crookshanks');
   });
 
-  it.skip('should have a type', function() {
+  it('should have a type', function() {
     var pet = new Pet('Crookshanks', 'cat');
 
     assert.equal(pet.type, 'cat');
   });
 
-  it.skip('should have a differnt name and type', function() {
+  it('should have a differnt name and type', function() {
     var pet = new Pet('Hedwig', 'owl');
 
     assert.equal(pet.name, 'Hedwig');
