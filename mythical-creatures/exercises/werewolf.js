@@ -28,8 +28,15 @@ Werewolf.prototype.change = function () {
 }
 
 Werewolf.prototype.eat = function (victim) {
-  this.human = (this.hungry == true) ? false : true;
-  this.change();
+  switch (this.human) {
+    case true:
+      return "nah dude";
+      break;
+    case false:
+      this.change();
+      victim.alive = false;
+      break;
+  }
 }
 
 module.exports = {Werewolf, Victim}
